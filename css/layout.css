@@ -1,0 +1,116 @@
+.grid {
+    display: block;
+    width: 100%;
+    align-content: center;
+    background: #d8773e;
+    border-spacing: 2px 2px;
+}
+
+.row {
+    /*display: table-row;*/
+    display: inline-table;
+    width: 100%
+}
+
+/* this is needed so that we can have a full expaned row in a css table*/
+.container-row {
+    display: table-caption;
+    width: 100%;
+    background-color: aqua;
+}
+
+/* This is a inner container to host a flex box*/
+.flex-box {
+    display:flex;
+    width: 100%;
+}
+
+/* specific flex box items to get equal space and text align center */
+.flex-box div{
+    flex: 1;
+    text-align: center;
+    background-color: aqua;
+}
+
+.flex-inline {
+    display: inline-table;
+}
+
+
+.flex-item {
+    background-color: lime;
+}
+
+.cell {
+    display: table-cell;
+    border:1px solid black;
+    text-align: center;
+}
+
+.col-1{
+    width:10%;
+}
+
+.col-2{
+    width:20%;
+}
+
+.col-3{
+    width:30%;
+}
+
+.col-4{
+    width:40%;
+}
+
+.col-5{
+    width:50%;
+}
+
+.col-6{
+    width:60%;
+}
+
+.col-7{
+    width:70%;
+}
+
+.col-8{
+    width:80%;
+}
+
+.col-9{
+    width:90%;
+}
+
+.col-10{
+    width:100%;
+}
+
+
+.one {
+    background: rgba(171, 122, 32, 0.65);
+}
+
+.two {
+    background: #7fe668;
+}
+
+.three {
+    background:#aaa;
+}
+
+.four {
+    background:#dc002e;
+}
+
+@media (max-width: 400px) {
+    .grid{
+        display: block;
+    }
+
+    .row, .cell{
+        display: block;
+        width: 100%;
+    }
+}
